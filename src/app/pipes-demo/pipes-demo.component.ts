@@ -79,6 +79,11 @@ export class PipesDemoComponent {
     return `${hours}:${minutes}:${seconds}`;
   }
 
+  addFriend(friend: string) {
+  //  this.friends.push(friend);
+    this.friends = [...this.friends, friend];
+  }
+
 }
 
 /*

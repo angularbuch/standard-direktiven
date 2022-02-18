@@ -146,5 +146,6 @@
   </div>
   <label>Neuen Freund hinzufügen</label>
   <input #newFriend
-         (keydown.enter)="friends.push(newFriend.value)">
+         (keydown.enter)="addFriend($any($event.target).value)">
+
 </div>
